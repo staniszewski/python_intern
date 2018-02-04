@@ -29,3 +29,4 @@ def hack_calculator(hack):
 if __name__ == "__main__":
     while 1:
         hack_calculator(input('Enter hack: '))
+  
