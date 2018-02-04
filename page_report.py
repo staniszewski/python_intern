@@ -3,9 +3,9 @@ from ipaddress import ip_address
 import sys
 
 
-def url_stripper():
+def url_stripper(log_file):
 
-    today_log = open('C://python27/today.log', 'r')
+    today_log = open(r'C://Users/sux^/PyCharmProjects/Python Intern - Task 2/' + log_file, 'r')
     stripped_url = {}
 
     for log_line_number, log in enumerate(today_log.readlines(), start=1):
@@ -29,13 +29,11 @@ def url_stripper():
             sys.stderr.write('Error in: %d line in today.log file. Invalid IPv4 address!' % log_line_number)
 
     for items in sorted(stripped_url.items(), key=lambda item: (-item[1], item[0])):
-        print(items[0], items[1])
-
-        # TODO: csv file format
+        print('"{0}",{1}' .format(items[0], items[1]))
 
     today_log.close()
     return stripped_url
 
 
 if __name__ == "__main__":
-    url_stripper()
+    url_stripper(sys.argv[1])
