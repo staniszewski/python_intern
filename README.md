@@ -63,7 +63,7 @@ python page_report.py today.log > report.csv
 #report.csv - your csv format file where you want to save stripped log file
 ```
 Script takes log file name as system argument and then passes it to function.  
-Make sure to edit 10th line in script and pass your directory!  
+Make sure to edit 10th line in script and pass your directory where log file is!  
 For example:  
 ```py
 today_log = open(r'C://Users/your_username/your_directory/some_subdirectory/' + log_file, 'r')
