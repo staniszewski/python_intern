@@ -15,7 +15,7 @@ c + c + b + c
 
 hack '_baaca_' has 31 power
 b + a + a + c + a	
-2 + 1 + 1*2	+ 3	+ 1*3 = 11 power
+2 + 1 + 1*2 + 3 + 1*3 = 11 power
 
 extra power for 'baa'
 + 20 = 31 power
