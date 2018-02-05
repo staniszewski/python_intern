@@ -7,15 +7,18 @@ Each character has own power which is added to final hack power.
 Each repeated character in a hack brings more power than its previous iteration.
 'a' has 1 power, 'b' - 2 and 'c' - 3.
 Hack containing phrases 'ba' or 'baa' has extra power. For 'ba' - 10 power and for 'baa' - 20.
-For example: hack 'ccbc' has 20 power.
+For example: 
 ```
-c	+	c	+	b	+	c		=	power
-3	+	3*2	+	2	+	3*3		=	20
+hack '_ccbc_' has 20 power
+c + c + b + c		
+3 + 3*2 + 2 + 3*3 = 20 power
 
-hack 'baaca' has 31 power
-b	+	a	+	a	+	c	+	a	=	power
-2	+	1	+	1*2	+	3	+	1*3	=	11
-extra power for 'baa' 		+ 20	=	31	
+hack '_baaca_' has 31 power
+b + a + a + c + a	
+2 + 1 + 1*2	+ 3	+ 1*3 = 11 power
+
+extra power for 'baa'
++ 20 = 31 power
 ```
 
 ## Usage
