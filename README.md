@@ -86,7 +86,9 @@ Make sure to edit 10th line in script and pass your directory!
 
 For example:
 
-`today_log = open(r'C://Users/your_username/your_directory/some_subdirectory/' + log_file, 'r')`
+```py
+today_log = open(r'C://Users/your_username/your_directory/some_subdirectory/' + log_file, 'r')
+```
 
 Otherwise script will not work correctly!
 
